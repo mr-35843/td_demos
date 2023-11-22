@@ -1,12 +1,11 @@
 import Phaser from 'phaser'
-
 import BootScene from './scenes/BootScene'
 
 var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;
 var zoom = 1; //default.
 
-if(windowHeight > 400){
+if(windowWidth > 720){
 	zoom = 2
 	windowHeight = windowHeight / zoom;
 	windowWidth = windowWidth / zoom;
