@@ -1,5 +1,6 @@
 import Phaser from 'phaser'
 import BootScene from './scenes/BootScene'
+import Build0002 from './scenes/Build0002';
 
 var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;
@@ -27,7 +28,7 @@ const config = {
 		},
 		
 	},
-	scene: [BootScene],
+	scene: [BootScene, Build0002],
 }
 
 export default new Phaser.Game(config)
