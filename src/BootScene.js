@@ -10,11 +10,8 @@ export default class BootScene extends Phaser.Scene {
 	{
 		//load/cache tileset images
 		this.load.image('build_atlas', 'assets/tilesets/build_atlas.png');
-		this.load.image('extra_props_01', 'assets/tilesets/extra_props_01.png');
-		this.load.image('house_inside_01', 'assets/tilesets/house_inside.png');
 		this.load.image('lpc_forest_tiles','assets/tilesets/lpc_forest_tiles.png');
 		this.load.image('room_builder','assets/tilesets/room_builder.png');
-		this.load.image('terrain_01','assets/tilesets/terrain.png');
 		this.load.image('terrain_atlas','assets/tilesets/terrain_atlas.png');
 
 		// load/cache maps

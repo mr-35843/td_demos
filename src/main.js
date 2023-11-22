@@ -5,13 +5,15 @@ import BootScene from './BootScene'
 var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;
 var zoom = 1; //default.
-if(windowHeight > 600){
-	console.log("TRUE!");
-	zoom = 2;
+
+if(windowHeight > 400){
+	zoom = 2
+	windowHeight = windowHeight / zoom;
+	windowWidth = windowWidth / zoom;
 }
 //DEBUG:
-console.log(windowWidth + " width.");
-console.log(windowHeight + " height.");
+//console.log(windowWidth + " width.");
+//console.log(windowHeight + " height.");
 
 const config = {
 	type: Phaser.AUTO,
