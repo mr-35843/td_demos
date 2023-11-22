@@ -1,6 +1,6 @@
 import Phaser from 'phaser'
 
-import BootScene from './BootScene'
+import BootScene from './scenes/BootScene'
 
 var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;

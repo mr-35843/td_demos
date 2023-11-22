@@ -13,7 +13,6 @@ export default class BootScene extends Phaser.Scene {
 		this.load.image('lpc_forest_tiles','assets/tilesets/lpc_forest_tiles.png');
 		this.load.image('terrain_01','assets/tilesets/terrain.png');
 		this.load.image('terrain_atlas','assets/tilesets/terrain_atlas.png');
-
 		// load/cache maps
 		this.load.tilemapTiledJSON('overworld','maps/demo_nesdorn.json');
 		// load/cache sprites
