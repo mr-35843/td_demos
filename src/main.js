@@ -1,4 +1,5 @@
 import Phaser from 'phaser'
+import { v4 as uuidv4 } from 'uuid';
 import BootScene from './scenes/BootScene'
 import Build0002 from './scenes/Build0002';
 
