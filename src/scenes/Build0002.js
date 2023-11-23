@@ -1,5 +1,6 @@
 import Phaser from "phaser";
 
+
 export default class Build0002 extends Phaser.Scene{
     
     constructor() {
@@ -39,7 +40,7 @@ this.controls = new Phaser.Cameras.Controls.FixedKeyControl({
   right: cursors.right,
   up: cursors.up,
   down: cursors.down,
-  speed: 0.5
+  speed: 0.25
 });
 
 // Constrain the camera so that it isn't allowed to move outside the width/height of tilemap
@@ -47,7 +48,7 @@ camera.setBounds(0, 0, demo_overworld.widthInPixels, demo_overworld.heightInPixe
 
 // Help text that has a "fixed" position on the screen
 this.add
-  .text(16, 16, "Arrow keys to scroll", {
+  .text(16, 16, "Build0002, Use arrow keys to scroll", {
 	font: "18px monospace",
 	// @ts-ignore
 	fill: "#ffffff",

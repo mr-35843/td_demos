@@ -8,7 +8,15 @@
 </head>
 
 <body>
-	<div id="app"></div>
+	<div id="appUI">
+		<label for="screenResolution">Resolution:</label>
+		<select name="resolution" id="screenResolution">
+			<option value="autofill">autofill</option>
+			<option value="360">small</option>
+			<option value="720">medium</option>
+		</select>
+	</div>
+	<center><div id="app"></div></center>
 	<script type="module" src="src/main.js"></script>
 </body>
 
