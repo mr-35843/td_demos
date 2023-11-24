@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import BuildInfo from "../middleware/BuildInfo";
 
 
 export default class Build0002 extends Phaser.Scene{
@@ -46,16 +47,9 @@ this.controls = new Phaser.Cameras.Controls.FixedKeyControl({
 // Constrain the camera so that it isn't allowed to move outside the width/height of tilemap
 camera.setBounds(0, 0, demo_overworld.widthInPixels, demo_overworld.heightInPixels);
 
-// Help text that has a "fixed" position on the screen
-this.add
-  .text(16, 16, "Build0002, Use arrow keys to scroll", {
-	font: "18px monospace",
-	// @ts-ignore
-	fill: "#ffffff",
-	padding: { x: 20, y: 10 },
-	backgroundColor: "#000000"
-  })
-  .setScrollFactor(0);
+// build info
+const buildInfo = new BuildInfo(this);
+
 }
 	
   
@@ -63,4 +57,6 @@ update(time, delta) {
 	// Apply the controls to the camera each update tick of the game
 	this.controls.update(delta);
   }
+
+
 }

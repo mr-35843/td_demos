@@ -4,14 +4,6 @@ import Build0002 from './scenes/Build0002';
 import SettingsScreenResolution from './middleware/settings/ScreenResolution';
 
 let appSettingsResolution = new SettingsScreenResolution();
-
-
-
-
-
-
-
-
 const config = {
 	type: Phaser.AUTO,
 	parent: 'app',
