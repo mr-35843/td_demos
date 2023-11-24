@@ -3,30 +3,35 @@ import BootScene from './scenes/BootScene'
 import Build0002 from './scenes/Build0002';
 import SettingsScreenResolution from './middleware/settings/ScreenResolution';
 
+const appName = "app"
+const physicsEngine = 'arcade';
+const gameWindow = document.getElementById(appName);
+var scenes = [BootScene, Build0002];
+
 let restartTriggerSelector = document.getElementById("screenResolution");
 restartTriggerSelector.addEventListener("change", ()=>{
-	document.getElementById("app").innerHTML = "";
-	startGame();
+	gameWindow.innerHTML = "";
+	startGame(appName, physicsEngine, scenes);
 })
 
-startGame();
+startGame(appName, physicsEngine, scenes);
 
-function startGame(){
+function startGame(appName, physicsEngine, scenes){
 	let appSettingsResolution = new SettingsScreenResolution();
 	const config = {
 		type: Phaser.AUTO,
-		parent: 'app',
+		parent: appName,
 		width: appSettingsResolution.windowWidth,
 		height: appSettingsResolution.windowHeight,
 		zoom: appSettingsResolution.zoom,
 		physics: {
-			default: 'arcade',
+			default: physicsEngine,
 			arcade: {
 				gravity: { y: 0 },
 			},
 			
 		},
-		scene: [BootScene, Build0002],
+		scene: scenes,
 	}
 
 	return new Phaser.Game(config);
