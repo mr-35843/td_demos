@@ -3,6 +3,32 @@
 Public files for the very first implementations and progress on game dev concepts and implementations.
 Ever going work in progress, until it's not!
 
+Current build: Build0002!
+Features: 
+5 layer map/2d game world
+
+dynamic zoom based upon resolution
+
+Responsive game client resizing
+
+Upcoming: Build0003 - Sprites and animations!
+2 Player sprites
+Player sprites walking animations & controls
+Player sprites casting animations
+Player sprites tools animations
+Player sprites combat animations
+
+Further ahead: 	Build0004 - Player gameworld collisions and physics
+		Build0005 - Expanding the gameworld and zone transfers
+  		Build0006 - Signs of life! Adding the first NPC's
+    		Build0007 - Basic pathfinding for enemies.
+
+      		More too be announced soon!
+  		
+		
+
+
+
 
 # Phaser 3 + Vite.js Template
 > Make Phaser 3 games with modern frontend tooling.
