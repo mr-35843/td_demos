@@ -18,12 +18,13 @@ Player sprites casting animations
 Player sprites tools animations
 Player sprites combat animations
 
-Further ahead: 	Build0004 - Player gameworld collisions and physics
-		Build0005 - Expanding the gameworld and zone transfers
-  		Build0006 - Signs of life! Adding the first NPC's
-    		Build0007 - Basic pathfinding for enemies.
+Further ahead: 	
+Build0004 - Player gameworld collisions and physics
+Build0005 - Expanding the gameworld and zone transfer
+Build0006 - Signs of life! Adding the first NPC's
+Build0007 - Basic pathfinding for enemies.
 
-      		More too be announced soon!
+More too be announced soon!
   		
 		
 
