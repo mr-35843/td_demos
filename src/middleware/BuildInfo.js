@@ -2,7 +2,7 @@ export default class BuildInfo{
     constructor(scene){
         const positionX = 16;
         const positionY = 16;
-        const message = "Build 0002, Use arrow keys to scroll Testingggz!";
+        const message = "Build 0003, First Sprites & Animations";
         const font = "12px monospace";
         const fillColor = "#ffffff";
         const paddingX = 20;
