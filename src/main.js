@@ -1,12 +1,12 @@
 import Phaser from 'phaser'
 import BootScene from './scenes/BootScene'
-import Build0002 from './scenes/Build0002';
+import Build0003 from './scenes/Build0003';
 import SettingsScreenResolution from './middleware/settings/ScreenResolution';
 
 const appName = "app"
 const physicsEngine = 'arcade';
 const gameWindow = document.getElementById(appName);
-var scenes = [BootScene, Build0002];
+var scenes = [BootScene, Build0003];
 
 let restartTriggerSelector = document.getElementById("screenResolution");
 restartTriggerSelector.addEventListener("change", ()=>{

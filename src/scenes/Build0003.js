@@ -2,10 +2,10 @@ import Phaser from "phaser";
 import BuildInfo from "../middleware/BuildInfo";
 
 
-export default class Build0002 extends Phaser.Scene{
+export default class Build0003 extends Phaser.Scene{
     
     constructor() {
-		super("Build0002");
+		super("Build0003");
 		var controls;
 	}
 
