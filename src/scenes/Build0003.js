@@ -1,12 +1,12 @@
 import Phaser from "phaser";
 import BuildInfo from "../middleware/BuildInfo";
+import Player from "../characters/Player";
 
 
 export default class Build0003 extends Phaser.Scene{
     
     constructor() {
 		super("Build0003");
-		var controls;
 	}
 
     create() {
@@ -35,17 +35,9 @@ const camera = this.cameras.main;
 
 // Set up the arrows to control the camera
 const cursors = this.input.keyboard.createCursorKeys();
-this.controls = new Phaser.Cameras.Controls.FixedKeyControl({
-  camera: camera,
-  left: cursors.left,
-  right: cursors.right,
-  up: cursors.up,
-  down: cursors.down,
-  speed: 0.33
-});
-
 // Constrain the camera so that it isn't allowed to move outside the width/height of tilemap
 camera.setBounds(0, 0, demo_overworld.widthInPixels, demo_overworld.heightInPixels);
+this.player = new Player(this, 96, 96, "female01")
 
 // build info
 const buildInfo = new BuildInfo(this);

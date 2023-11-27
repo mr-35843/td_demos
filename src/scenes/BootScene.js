@@ -3,7 +3,6 @@ import Phaser from 'phaser'
 export default class BootScene extends Phaser.Scene {
 	constructor() {
 		super('BootScene')
-		var controls;
 	}
 
 	preload()
@@ -19,6 +18,6 @@ export default class BootScene extends Phaser.Scene {
 	}	
 
 	create(){
-		this.scene.start("Build0002");
+		this.scene.start("Build0003");
 	}
 }

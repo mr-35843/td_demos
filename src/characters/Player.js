@@ -1,21 +1,13 @@
 import Entity from "./Entity";
 
 export default class Player extends Entity{
-    constructor(scene, x , y, textureKey, character_id, character_stats){
+    constructor(scene, x , y, textureKey){
         super(scene, x, y , textureKey, 'Player')
         
-        this.character_id = character_id;
         this.textureKey = textureKey;
-        this.playerDirection = 'down';
-        this.interact = 0;
-        this.cooldown = 1000;
-               
+        this.playerDirection = 'down';       
         const frameRate = 16;
         const anims = scene.anims;
-        
-        setInterval(()=>{
-          this.interact = 0;
-        }, this.cooldown)
 
         anims.create({
             key: this.textureKey + "-walk-down-animation",
