@@ -12,11 +12,17 @@ dynamic zoom based upon resolution
 Responsive game client resizing
 
 Upcoming: Build0003 - Sprites and animations!
-2 Player sprites
-Player sprites walking animations & controls
+3001
+female basic animations and spritesheets
+3002
+controls and implemtation of walk animations
+3003
+controls and animations for:
 Player sprites casting animations
 Player sprites tools animations
 Player sprites combat animations
+3004 
+male basic animations and spritesheets
 
 Further ahead: 	
 Build0004 - Player gameworld collisions and physics
