@@ -11,7 +11,7 @@ dynamic zoom based upon resolution
 
 Responsive game client resizing
 
-Upcoming: Build0003 - Sprites and animations!
+Upcoming: Build0003000 - Sprites and animations!
 3001
 female basic animations and spritesheets
 3002
